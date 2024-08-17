@@ -17,7 +17,7 @@ function App() {
   return (
     <>
      <h1 className="jokes">
-      Your Life is a Joke
+      Our Life is a Joke
      </h1>
      <p>Jokes:{jokes.length}</p>
      {

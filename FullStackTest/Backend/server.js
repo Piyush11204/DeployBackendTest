@@ -1,12 +1,14 @@
 import express from  "express"
-// import cors from  "cors"
-// const cors =require("cors")
 const app = express()
 const port = process.env.port || 3000
 // app.use(cors())
+app.use(express.static('dist'))
+
+
 app.get('/',(req,res)=>{
     res.send("Server is ready")
 })
+
 
 app.get("/api/jokes",(req,res)=>{
     const jokes = [
